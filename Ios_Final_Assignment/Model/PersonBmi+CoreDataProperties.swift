@@ -2,7 +2,7 @@
 //  PersonBmi+CoreDataProperties.swift
 //  Ios_Final_Assignment
 //
-//  Created by Shreya Karki on 12/16/21.
+//  Created by Shreya Karki on 12/17/21.
 //
 //
 
@@ -17,12 +17,9 @@ extension PersonBmi {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var weightInKilos: Double
-    @NSManaged public var weightInPounds: Double
-    @NSManaged public var heightInInches: Double
-    @NSManaged public var heightInMeters: Double
-    @NSManaged public var age: Int64
-    @NSManaged public var gender: String?
+    @NSManaged public var weight: Float
+    @NSManaged public var date: Date?
+    @NSManaged public var bmi: Float
 
 }
 

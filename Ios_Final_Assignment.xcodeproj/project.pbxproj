@@ -14,9 +14,11 @@
 		C7650BB5276C30FC00D55234 /* Ios_Final_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7650BB3276C30FC00D55234 /* Ios_Final_Assignment.xcdatamodeld */; };
 		C7650BB7276C310100D55234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7650BB6276C310100D55234 /* Assets.xcassets */; };
 		C7650BBA276C310100D55234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7650BB8276C310100D55234 /* LaunchScreen.storyboard */; };
-		C7650BC3276C34DD00D55234 /* PersonBmi+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7650BC1276C34DD00D55234 /* PersonBmi+CoreDataClass.swift */; };
-		C7650BC4276C34DD00D55234 /* PersonBmi+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7650BC2276C34DD00D55234 /* PersonBmi+CoreDataProperties.swift */; };
 		C7650BC7276C49A600D55234 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7650BC6276C49A600D55234 /* TableViewController.swift */; };
+		C7650BCA276D221500D55234 /* PersonBmi+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7650BC8276D221500D55234 /* PersonBmi+CoreDataClass.swift */; };
+		C7650BCB276D221500D55234 /* PersonBmi+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7650BC9276D221500D55234 /* PersonBmi+CoreDataProperties.swift */; };
+		C7650BD0276D2DE100D55234 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7650BCE276D2DE100D55234 /* CustomTableViewCell.swift */; };
+		C7650BD1276D2DE100D55234 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7650BCF276D2DE100D55234 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +31,11 @@
 		C7650BB6276C310100D55234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7650BB9276C310100D55234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7650BBB276C310100D55234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7650BC1276C34DD00D55234 /* PersonBmi+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonBmi+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C7650BC2276C34DD00D55234 /* PersonBmi+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonBmi+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C7650BC6276C49A600D55234 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C7650BC8276D221500D55234 /* PersonBmi+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonBmi+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C7650BC9276D221500D55234 /* PersonBmi+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonBmi+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C7650BCE276D2DE100D55234 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C7650BCF276D2DE100D55234 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +85,10 @@
 		C7650BC5276C34EA00D55234 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C7650BC1276C34DD00D55234 /* PersonBmi+CoreDataClass.swift */,
-				C7650BC2276C34DD00D55234 /* PersonBmi+CoreDataProperties.swift */,
+				C7650BC8276D221500D55234 /* PersonBmi+CoreDataClass.swift */,
+				C7650BC9276D221500D55234 /* PersonBmi+CoreDataProperties.swift */,
+				C7650BCE276D2DE100D55234 /* CustomTableViewCell.swift */,
+				C7650BCF276D2DE100D55234 /* CustomTableViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 			files = (
 				C7650BBA276C310100D55234 /* LaunchScreen.storyboard in Resources */,
 				C7650BB7276C310100D55234 /* Assets.xcassets in Resources */,
+				C7650BD1276D2DE100D55234 /* CustomTableViewCell.xib in Resources */,
 				C7650BB2276C30FC00D55234 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,10 +167,11 @@
 			files = (
 				C7650BAF276C30FC00D55234 /* ViewController.swift in Sources */,
 				C7650BC7276C49A600D55234 /* TableViewController.swift in Sources */,
+				C7650BD0276D2DE100D55234 /* CustomTableViewCell.swift in Sources */,
 				C7650BAB276C30FC00D55234 /* AppDelegate.swift in Sources */,
+				C7650BCA276D221500D55234 /* PersonBmi+CoreDataClass.swift in Sources */,
+				C7650BCB276D221500D55234 /* PersonBmi+CoreDataProperties.swift in Sources */,
 				C7650BAD276C30FC00D55234 /* SceneDelegate.swift in Sources */,
-				C7650BC4276C34DD00D55234 /* PersonBmi+CoreDataProperties.swift in Sources */,
-				C7650BC3276C34DD00D55234 /* PersonBmi+CoreDataClass.swift in Sources */,
 				C7650BB5276C30FC00D55234 /* Ios_Final_Assignment.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
