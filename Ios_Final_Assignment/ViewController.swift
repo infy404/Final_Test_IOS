@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Ios_Final_Assignment
 //
-//  Created by Shreya Karki on 12/16/21.
+//  Created by Shrijan Karki on 12/16/21.
 //
 
 import UIKit
@@ -32,6 +32,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var bmiClass: UILabel!
     @IBOutlet weak var metricSwitch: UISwitch!
     
+    
+    @IBAction func doneTapped(_ sender: Any) {
+        
+    }
+    
     @IBAction func calculateTap(_ sender: Any) {
         
         fHeight = (insertHeight.text! as NSString).floatValue
@@ -48,7 +53,6 @@ class ViewController: UIViewController {
         {
             //Calculate in Imperial
             calculateBmi = (fWeight * 703) / (fHeight * fHeight)
-            
         }
         
         let finalBMI = NSString(format : "%.2f", calculateBmi) as String

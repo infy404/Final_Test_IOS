@@ -20,6 +20,7 @@ extension PersonBmi {
     @NSManaged public var weight: Float
     @NSManaged public var date: Date?
     @NSManaged public var bmi: Float
+    @NSManaged public var bHeight: Float
 
 }
 

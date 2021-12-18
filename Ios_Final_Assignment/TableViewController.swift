@@ -93,7 +93,7 @@ class TableViewController: UIViewController {
 
 extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items!.count
+        return self.items?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -113,5 +113,24 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         let person = self.items![indexPath.row]
         
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+            
+            let deleteAction = UIContextualAction(style: .destructive, title: "Delete"){(action, view, completionHandler)in
+                let removeBmi = self.items![indexPath.row]
+                self.context.delete(removeBmi)
+                
+                do{
+                    try self.context.save()
+                }
+                catch{
+                    
+                }
+                
+                self.fetchData()
+            }
+            
+            return UISwipeActionsConfiguration(actions: [deleteAction])
+        }
 
 }

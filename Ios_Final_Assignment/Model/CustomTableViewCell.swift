@@ -21,13 +21,10 @@ class CustomTableViewCell: UITableViewCell {
     public func config(BMI: Float, Weight: Float, date: Date){
         let currentDate = date
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YY/mm/dd hh:mm:ss"
+        dateFormatter.dateFormat = "YY/mm/dd"
         
         dateLabel.text = dateFormatter.string(from: currentDate)
         bmiLabel.text = NSString(format: "%.2f", BMI) as String
         weightLabel.text = NSString(format: "%.2f", Weight) as String
-        
-        
-        
     }
 }
